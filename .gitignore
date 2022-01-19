@@ -1,15 +1,9 @@
-# Jekyll
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Ignore folders from source code editors
+.vscode
+.idea
 
+# Ignore test files
+.cache
 
-# misc
+# Misc
 .DS_Store
-*.pem
-
-# local env files
-.env*
-
