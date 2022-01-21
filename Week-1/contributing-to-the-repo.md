@@ -49,3 +49,15 @@ At this point, save the file and move back to GitHub Desktop.
 Within GitHub Desktop, you should notice that there is a change. It should be that `your-name.md` was added to the local copy of the forked repository and that there were some contents added to the file.
 
 You are now ready to write a commit message. You can do this on the lower lefthand corner of the window. You can type "Add your-name.md" in the text input field that says `Summary (required)`. Once you do that, you can click the button **Commit to main**. This means you will be committing your change to the Git staging area, before you push it to the copy of your code on GitHub. 
+
+Once you commit the code, you should see that there is now the option to push your code to GitHub. There will be a **Push origin** button with an up arrow at the top of the GitHub Desktop window, as well as a blue banner that also has a **Push origin** button. You can click either of these buttons as they do the same thing. Once you click **Push origin** the commit will live on GitHub within your forked repository. 
+
+## Step 5 — Open a pull request
+
+A pull request is a way to ask the maintainer of the upstream / parent project to _pull_ our contribution into the larger project. 
+
+Once your change was made to the GitHub version of your forked repository, and is available at the https://github.com/**YourUsername**/dh-rutgers URL, you should have a banner on the main page of the repo that says you are one commit ahead of the upstream project (that is the one at https://github.com/**ltagliaferri**/dh-rutgers) and that you can now **Contribute** to the project. Click on **Contribute**, then click on **Open pull request**. Now, you will be able to inspect the changes you have made. You can optionally modify your commit message that you wrote in GitHub Desktop and can also add a description. 
+
+Once you are satisfied with your changes, you can click the green button that reads **Create pull request**. This is the final step of the pull request, and now that pull request will be visible on the upsteam main project.
+
+At this point, the maintainer will be able to pull in the pull request or else make another comment on that request. 
