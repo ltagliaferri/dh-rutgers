@@ -1,3 +1,0 @@
-# Jan 20, 2022 Blog
-
-In thinking through the public humanities...
