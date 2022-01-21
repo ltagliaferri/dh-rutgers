@@ -7,4 +7,4 @@ In any case, enough looking back. Let's cast our eyes forward. This is exciting.
 
 I'm not sure what role DH will play in my own work--mostly because I have no real idea of where I'm going--but I know it will be a factor. I'm already thinking of the possibilities of writing papers about cinema where clips are embedded and the reader can easily "see" what the article is referring to without having to search for the movie. My son would love nothing more than if I started included memes in my work. Perhaps that is how the two of us will collaborate.
 
-Starting to figure some of this out. Looking forward to what lies ahead. 
+Starting to figure some of this out. The future's bright. 
