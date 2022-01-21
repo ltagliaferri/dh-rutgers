@@ -2,7 +2,7 @@
 
 The benefit of GitHub is that we can use it to collaborate on code together, so we will want to contribute to the parent, or upstream, repository. 
 
-[![Introduction to GitHub](https://img.youtube.com/vi/0lEtVpdYbQ4/0.jpg)](hhttps://youtu.be/0lEtVpdYbQ4 "Introduction to GitHub")
+[![Introduction to GitHub](https://img.youtube.com/vi/0lEtVpdYbQ4/0.jpg)](https://youtu.be/0lEtVpdYbQ4 "Introduction to GitHub")
 
 If you click on the image above, you can review a video walkthrough of the process described below. 
 

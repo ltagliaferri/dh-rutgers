@@ -2,7 +2,7 @@
 
 We are going to be using GitHub to collaborate. GitHub was purchased by Microsoft in 2018, and is worthy of much critique and criticism; however, it also offers an accessible way of learning Git for code version control and collaboration. GitHub is where a lot of open source software lives today, and where many software developers work. Alternatives to GitHub include [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product) (owned by Atlassian), [SourceForge](https://sourceforge.net/), or rolling your own Git server.
 
-[![Introduction to GitHub](https://img.youtube.com/vi/0lEtVpdYbQ4/0.jpg)](hhttps://youtu.be/0lEtVpdYbQ4 "Introduction to GitHub")
+[![Introduction to GitHub](https://img.youtube.com/vi/0lEtVpdYbQ4/0.jpg)](https://youtu.be/0lEtVpdYbQ4 "Introduction to GitHub")
 
 You can click on the above video to watch a walkthrough of creating an account on GitHub and later of contributing to this project. 
 
