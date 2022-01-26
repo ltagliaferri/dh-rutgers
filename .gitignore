@@ -1,9 +1,0 @@
-# Ignore folders from source code editors
-.vscode
-.idea
-
-# Ignore test files
-.cache
-
-# Misc
-.DS_Store
