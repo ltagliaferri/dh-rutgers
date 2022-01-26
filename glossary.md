@@ -54,14 +54,6 @@ A fork of a Git repository is a copy of the repository that is a completely new 
 
 ---
 
-### Pull
-
-When you pull in Git, you are bringing in any of the remote changes to your copy. When you are coding, this ensures that you have access to the most recent updates so that you so that you do not create conflicts on top of breaking changes. Generally, you will pull from a remote origin repository to a local copy.
-
-If you are working with an upstream repository, you will "fetch" rather than "pull" changes in. 
-
----
-
 ### Pull request
 
 A request that a project accept changes you have made to its code repository; that is, to _pull_ in the changes you have contributed to the code base so that it is available for others.
@@ -76,4 +68,4 @@ When you push in Git, you are moving commits you have made to the software to th
 
 ### Upstream
 
-An upstream repository is a project you have forked from. This is different from an origin repository, which would be your remote fork. You will fetch, rather than pull, updates from an upstream repository. 
+An upstream repository is a project you have forked from. This is different from an origin repository, which would be your remote fork. 
