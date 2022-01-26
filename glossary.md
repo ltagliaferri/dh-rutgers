@@ -48,6 +48,12 @@ Committing within the context of a Git repository means that you are recording c
 
 ---
 
+### Fetch
+
+When you fetch from a remote repository, you are downloading the updates to your local copy. 
+
+---
+
 ### Fork
 
 A fork of a Git repository is a copy of the repository that is a completely new copy of that repository. A fork of a repository on GitHub will live under your username and the project name. If you would like to contribute to the main project, you will need to open a request for the maintainers to merge it in. You may also use a fork of a repository in order to create a new project that is based on an already existant one (the one that you forked). 
