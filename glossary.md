@@ -24,7 +24,7 @@ Markdown is a markup language that we can use to create formatted text using a p
 
 ## Git
 
-Git is version control software that is free and open source. It allows for tracking changes across files and is often use for collaboration across software development projects.
+Git is version control software that is free and open source, and serves as the basis for Git code host platforms like GitHub. It allows for tracking changes across files and is often use for collaboration across software development projects.
 
 ---
 
