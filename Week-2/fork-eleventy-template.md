@@ -1,1 +1,0 @@
-[![Fork an Eleventy Template](https://img.youtube.com/vi/TGoleskxqgc/0.jpg)](https://youtu.be/TGoleskxqgc "Fork an Eleventy Template")
