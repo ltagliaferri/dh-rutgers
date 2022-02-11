@@ -1,4 +1,4 @@
-title: # A Linux Command Line Primer
+# A Linux Command Line Primer
 
 _A version of this tutorial was originally published at [https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer](https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer)._
 
