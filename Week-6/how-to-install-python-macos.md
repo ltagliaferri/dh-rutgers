@@ -1,6 +1,6 @@
 # How To Install Python 3 and Set Up a Local Programming Environment on macOS
 
-Python is a versatile programming language that can be used for many different programming projects. First published in 1991 with a name inspired by the British comedy group Monty Python, the development team wanted to make Python a language that was fun to use. Easy to set up, and written in a relatively straightforward style with immediate feedback on errors, Python is a great choice for beginners and experienced developers alike. Python 3 is the most current version of the language and is considered to be the future of Python.
+Python is a versatile programming language that can be used for many different programming projects. First published in 1991 with a name inspired by the British comedy group Monty Python, the development team wanted to make Python a language that was fun to use. Python is a great choice for beginners and experienced developers alike. Python 3 is the most current version of the language and is considered to be the future of Python.
 
 This tutorial will guide you through installing Python 3 on your local macOS machine and setting up a programming environment via the command line.
 
@@ -12,9 +12,9 @@ The macOS Terminal is an application you can use to access the command line inte
 
 ![macOS terminal](https://assets.digitalocean.com/articles/eng_python/OSXSetUp/MacOSXSetUp.png)
 
-There are many more Terminal commands to learn that can enable you to do more powerful things. The article “[An Introduction to the Linux Terminal] (https://www.digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal)” can get you better oriented with the Linux Terminal, which is similar to the macOS Terminal.
+There are many more Terminal commands to learn that can enable you to do more powerful things. The article “[An Introduction to the Linux Terminal](https://www.digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal)” can get you better oriented with the Linux Terminal, which is similar to the macOS Terminal.
 
-##Step 2 — Installing Xcode
+## Step 2 — Installing Xcode
 
 Xcode is an integrated development environment (IDE) that is comprised of software development tools for macOS. You may have Xcode installed already. To check, in your Terminal window, type:
 
@@ -28,7 +28,7 @@ If you receive the following output, then Xcode is installed:
 /Library/Developer/CommandLineTools
 ```
 
-If you received an error, then in your web browser install [Xcode from the App Store] (https://itunes.apple.com/us/app/xcode/id497799835?mt=12&ign-mpt=uo%3D2) and accept the default options.
+If you received an error, then in your web browser install [Xcode from the App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12&ign-mpt=uo%3D2) and accept the default options.
 
 Once Xcode is installed, return to your Terminal window. Next, you’ll need to install Xcode’s separate Command Line Tools app, which you can do by typing:
 
@@ -38,7 +38,7 @@ xcode-select --install
 
 At this point, Xcode and its Command Line Tools app are fully installed, and we are ready to install the package manager Homebrew.
 
-##Step 3 — Installing and Setting Up Homebrew
+## Step 3 — Installing and Setting Up Homebrew
 
 While the OS X Terminal has a lot of the functionality of Linux Terminals and other Unix systems, it does not ship with a good package manager. A package manager is a collection of software tools that work to automate installation processes that include initial software installation, upgrading and configuring of software, and removing software as needed. They keep installations in a central location and can maintain all software packages on the system in formats that are commonly used. Homebrew provides OS X with a free and open source software package managing system that simplifies the installation of software on OS X.
 
@@ -54,13 +54,13 @@ If you need to enter your password note that your keystrokes will not display in
 
 Let’s walk through the flags that are associated with the curl command:
 
-* The -f or --fail flag tells the Terminal window to give no HTML document output on server errors.
-* The -s or --silent flag mutes curl so that it does not show the progress meter, and combined with the -S or --show-error flag it will ensure that curl shows an error message if it fails.
-* The -L or --location flag will tell curl to redo the request to a new place if the server reports that the requested page has moved to a different location.
+* The `-f` or `--fail` flag tells the Terminal window to give no HTML document output on server errors.
+* The `-s` or `--silent` flag mutes curl so that it does not show the progress meter, and combined with the `-S` or `--show-error `flag it will ensure that curl shows an error message if it fails.
+* The `-L` or `--location` flag will tell curl to redo the request to a new place if the server reports that the requested page has moved to a different location.
 
 Once the installation process is complete, we’ll put the Homebrew directory at the top of the PATH environment variable. This will ensure that Homebrew installations will be called over the tools that Mac OS X may select automatically that could run counter to the development environment we’re creating.
 
-You should create or open the ~/.bash_profile file with the command-line text editor nano using the nano command:
+You should create or open the `~/.bash_profile` file with the command-line text editor nano using the nano command:
 
 ```bash
 nano ~/.bash_profile
@@ -72,7 +72,7 @@ Once the file opens up in the Terminal window, write the following:
 export PATH=/usr/local/bin:$PATH
 ```
 
-To save your changes, hold down the control key and the letter o, and when prompted press the return key. Now you can exit nano by holding the control key and the letter x.
+To save your changes, hold down the control key and the letter `o`, and when prompted press the return key. Now you can exit nano by holding the control key and the letter `x`.
 
 For these changes to activate, in the Terminal window, type:
 
@@ -133,7 +133,7 @@ A tool for use with Python, we will use pip to install and manage programming pa
 pip3 install package_name
 ```
 
-Here, package_name can refer to any Python package or library, such as Django for web development or NumPy for scientific computing. So if you would like to install NumPy, you can do so with the command pip3 install numpy.
+Here, `package_name` can refer to any Python package or library, such as Django for web development or NumPy for scientific computing. So if you would like to install NumPy, you can do so with the command pip3 install numpy.
 
 setuptools facilitates packaging Python projects, and wheel is a built-package format for Python that can speed up your software production by reducing the number of times you need to compile.
 
@@ -177,12 +177,12 @@ Once you are in the directory where you would like the environments to live, you
 python3.9 -m venv my_env
 ```
 
-Essentially, this command creates a new directory (in this case called my_env) that contains a few items:
+Essentially, this command creates a new directory (in this case called `my_env`) that contains a few items:
 
-* The pyvenv.cfg file points to the Python installation that you used to run the command.
+* The `pyvenv.cfg` file points to the Python installation that you used to run the command.
 * The lib subdirectory contains a copy of the Python version and has a site-packages subdirectory inside it that starts out empty but will eventually hold the relevant third-party modules that you install.
 * The include subdirectory compiles packages.
-* The bin subdirectory has a copy of the Python binary along with the activate shell script that is used to set up the environment.
+* The `bin` subdirectory has a copy of the Python binary along with the activate shell script that is used to set up the environment.
 
 Together, these files work to make sure that your projects are isolated from the broader context of your local machine, so that system files and project files don’t mix. This is good practice for version control and to ensure that each of your projects has access to the particular packages that it needs.
 
@@ -192,13 +192,13 @@ To use this environment, you need to activate it, which you can do by typing the
 source my_env/bin/activate
 ```
 
-Your prompt will now be prefixed with the name of your environment, in this case it is called my_env:
+Your prompt will now be prefixed with the name of your environment, in this case it is called `my_env`:
 
-```bash
+```
 (my_env) Sammys-MBP:~ sammy$
 ```
 
-This prefix lets us know that the environment my_env is currently active, meaning that when we create programs here they will use only this particular environment’s settings and packages.
+This prefix lets us know that the environment `my_env` is currently active, meaning that when we create programs here they will use only this particular environment’s settings and packages.
 
 > **Note**: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3 if you would prefer. If you use Python 3 on your machine outside of an environment, you’ll need to use the python3 and pip3 commands exclusively, as python and pip will call an earlier version of Python.
 
@@ -228,13 +228,13 @@ Once you exit out of nano and return to your shell, let’s run the program:
 python hello.py
 ```
 
-The hello.py program that you just created should cause Terminal to produce the following output:
+The `hello.py` program that you just created should cause Terminal to produce the following output:
 
 ```
 Hello, World!
 ```
 
-To leave the environment, simply type the command deactivate and you’ll return to your original directory.
+To leave the environment, type the command `deactivate` and you’ll return to your original directory.
 
 ## Conclusion
 
