@@ -219,7 +219,9 @@ git config --global core.editor "vim"
 ```
 
 After running the `git commit` command, depending on the default text editor you’re using, your terminal window should display a document ready for you to edit that will look similar to this:
-GNU nano 2.0.6 File: …username/repository/.git/COMMIT_EDITMSG
+
+```
+[label GNU nano 2.0.6 File: …username/repository/.git/COMMIT_EDITMSG]
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
@@ -229,6 +231,7 @@ GNU nano 2.0.6 File: …username/repository/.git/COMMIT_EDITMSG
 # Changes to be committed:
 #       modified:   <^>new-feature.py<^>
 #
+```
 
 Underneath the introductory comments, you should add the commit message to the text file.
 
@@ -402,3 +405,5 @@ At this point, you have successfully sent a pull request to an open-source softw
 Contributing to open-source projects — and becoming an active open-source developer — can be a rewarding experience. Making regular contributions to software you frequently use allows you to make sure that that software is as valuable to other end users as it can be.
 
 If you’re interested in learning more about Git and collaborating on open-source software, you can read our tutorial series entitled _[An Introduction to Open Source](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source)_. If you’re already familiar with Git, and would like a cheat sheet, you can refer to “[How To Use Git: A Reference Guide](https://www.digitalocean.com/community/tutorials/how-to-use-git-a-reference-guide).”
+
+_A version of this tutorial was published at [https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)_.
