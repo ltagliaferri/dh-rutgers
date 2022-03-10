@@ -34,7 +34,7 @@ GitHub repository URLs will reference both the username associated with the owne
 https://github.com/do-community/cloud_haiku
 ```
 
-In the above example, do-community is the username and cloud_haiku is the repository name.
+In the above example, `do-community` is the username and `cloud_haiku` is the repository name.
 
 Once you have identified the project you would like to contribute to, you can navigate to the URL, which will be formatted like so:
 
@@ -44,17 +44,17 @@ https://github.com/<^>username<^>/<^>repository<^>
 
 Or, you can search for the project using the GitHub search bar.
 
-When you’re on the main page for the repository, you’ll see a **Fork** button on your upper right-hand side of the page, underneath your user icon:
+When you’re on the main page for the repository, a **Fork** button will be displayed on your upper right-hand side of the page, underneath your user icon:
 
 ![GitHub Forking](https://assets.digitalocean.com/articles/eng_python/PullRequest/ch_gh_arrow_blink.gif)
 
-Click on the fork button to start the forking process. Within your browser window, you’ll receive a notification that the repository you’re forking is being processed:
+Click on the **Fork** button to start the forking process. Within your browser window, you’ll receive a notification that the repository you’re forking is being processed:
 
 ![Forking on GitHub](https://assets.digitalocean.com/articles/eng_python/PullRequest/GitHub_Forking.png)
 
 Once the process is done, your browser will go to a screen similar to the previous repository screen, except that at the top you will see your username before the repository name, and in the URL it will also say your username before the repository name.
 
-So, in the example above, instead of **do-community / cloud_haiku** at the top of the page, you’ll see **<^>your-username<^> / cloud_haiku**, and the new URL will look like this:
+So, in the example above, instead of **do-community / cloud_haiku** at the top of the page, you’ll see **<^>your-username<^> / cloud_haiku**, and the new URL will read similar to this:
 
 ```
 https://github.com/<^>your-username<^>/cloud_haiku
@@ -68,7 +68,7 @@ To make your own local copy of the repository you would like to contribute to, l
 
 We’ll use the `git clone` command along with the URL that points to your fork of the repository.
 
-This URL will be similar to the URL above, except now it will end with `.git`. In the `cloud_haiku` example above, the URL will look like this:
+This URL will be similar to the URL above, except now it will end with `.git`. In the `cloud_haiku` example above, the URL will read similar to this, with your actual username replacing `your-username`:
 
 ```
 https://github.com/<^>your-username<^>/cloud_haiku.git
@@ -90,13 +90,13 @@ Now that we have a local copy of the code, we can move on to creating a new bran
 
 Whenever you work on a collaborative project, you and other programmers contributing to the repository will have different ideas for new features or fixes at once. Some of these new features will not take significant time to implement, but some of them will be ongoing. Because of this, it is important to branch the repository so that you are able to manage the workflow, isolate your code, and control what features make it back to the main branch of the project repository.
 
-The primary branch of a project repository is usually called the **main** branch. A common best practice is to consider anything on the main branch as being deployable for others to use at any time.
+The primary branch of a project repository is usually called the **main** branch. A recommended practice is to consider anything on the main branch as being deployable for others to use at any time.
 
 <$>[note]
 **Note**: In June 2020, GitHub updated its terminology to refer to default source code branches as the `main` branch, instead of the `master` branch. If your default branch still appears as `master` you can update it to `main` by [changing the default branch settings](https://docs.github.com/en/github/administering-a-repository/managing-branches-in-your-repository/changing-the-default-branch).
 <$>
 
-When creating a branch, it is very important that you create your new branch off of the main branch. You should also make sure that your branch name is a descriptive one. Rather than calling it `my-branch`, you should go with something like `frontend-hook-migration` or `fix-documentation-typos` instead.
+When creating a branch based on the existing project, it is very important that you create your new branch off of the main branch. You should also make sure that your branch name is a descriptive one. Rather than calling it `my-branch`, you should go with something like `frontend-hook-migration` or `fix-documentation-typos` instead.
 
 To create the branch from our terminal window, let’s change our directory so that we are working in the directory of the repository. Be sure to use the actual name of the repository (such as `cloud_haiku`) to change into that directory.
 
@@ -116,7 +116,7 @@ Now that our new branch is created, we can switch to make sure that we are worki
 git checkout <^>new-branch<^>
 ```
 
-Once you enter the git checkout command, you will receive the following output:
+Once you enter the `git checkout` command, you will receive the following output:
 
 ```
 [secondary_label Output]
@@ -147,7 +147,7 @@ To demonstrate making a pull request, let’s use the example `cloud_haiku` repo
 nano <^>filename.md<^>
 ```
 
-Next, we'll some text to the new file, following the [contributing guidelines](https://github.com/do-community/cloud_haiku#contributing. We’ll need to use the Jekyll format and add a haiku with line breaks. The following file is an example file, as you’ll need to contribute an original haiku.
+Next, we'll add some text to the new file, following the [contributing guidelines](https://github.com/do-community/cloud_haiku#contributing). We’ll need to use the Jekyll format and add a haiku with line breaks. The following file is an example file, as you’ll need to contribute an original haiku.
 
 ```
 [label filename.md]
@@ -162,7 +162,7 @@ Like the octopuses' minds <br>
 Across the network <br>
 ```
 
-Once you’ve included your content, save and close the file. If you used nano, do so by pressing `CTRL + X`, then `Y`, and then `ENTER`.
+Once you’ve included your text, save and close the file. If you used nano, do so by pressing `CTRL + X`, then `Y`, and then `ENTER`.
 
 Once you have modified an existing file or added a new file to the project of your choice, you can stage it to your local repository, which we can do with the `git add` command. In our example, `filename.md`, we will type the following command.
 
@@ -197,7 +197,7 @@ The **commit message** is an important aspect of your code contribution; it help
 If we have a very short message, we can record that with the `-m` flag and the message in quotes. In our example of adding a haiku, our `git commit` may be similar to the following. 
 
 ```bash
-git commit -m "Added a new haiku in filename.md"
+git commit -m "Added a new haiku in filename.md file"
 ```
 
 Unless it is a minor or expected change, we may want to include a lengthier commit message so that our collaborators are fully up to speed with our contribution. To record this larger message, we will run the `git commit` command which will open the default text editor:
@@ -218,7 +218,7 @@ Or vim:
 git config --global core.editor "vim"
 ```
 
-After running the `git commit` command, depending on the default text editor you’re using, your terminal window should display a document ready for you to edit that will look similar to this:
+After running the `git commit` command, depending on the default text editor you’re using, your terminal window should display a document ready for you to edit that will be similar to this:
 
 ```
 [label GNU nano 2.0.6 File: …username/repository/.git/COMMIT_EDITMSG]
@@ -259,7 +259,7 @@ At this point you can use the `git push` command to push the changes to the curr
 git push --set-upstream origin new-branch
 ```
 
-The command will provide you with output to let you know of the progress, and it will look similar to the following:
+The command will provide you with output to let you know of the progress, and it will be similar to the following:
 
 ```
 [secondary_label Output]
@@ -279,17 +279,17 @@ At this point, it is possible to [make a pull request](https://www.digitalocean.
 
 ## Update Local Repository
 
-While you are working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will cause conflicts. To keep your local copy of the code base updated, you’ll need to sync changes.
+While you are working on a project alongside other contributors, it is important for you to keep your local repository up-to-date with the project as you don’t want to make a pull request for code that will automatically cause conflicts (though in collaborative code projects, conflicts are bound to occur). To keep your local copy of the code base updated, you’ll need to sync changes.
 
 We’ll first go over configuring a remote for the fork, then syncing the fork.
 
 ### Configure a Remote for the Fork
 
-**Remote repositories** make it possible for you to collaborate with others on a Git project. Each remote repository is a version of the project that is hosted on the Internet or a network you have access to. Each remote repository should be accessible to you as either read-only or read-write, depending on your user privileges.
+**Remote repositories** make it possible for you to collaborate with others on a Git project. Each remote repository is a version of the project that is hosted on the internet or a network you have access to. Each remote repository should be accessible to you as either read-only or read-write, depending on your user privileges.
 
 In order to be able to sync changes you make in a fork with the original repository you’re working with, you need to configure a remote that references the upstream repository. You should set up the remote to the upstream repository only once.
 
-Let’s first check which remote servers you have configured. The `git remote` command will list whatever remote repository you have already specified, so if you cloned your repository as we did above, you’ll at least see the origin repository, which is the default name given by Git for the cloned directory.
+Let’s first check which remote servers you have configured. The `git remote` command will list whatever remote repository you have already specified, so if you cloned your repository as we did above, you’ll at least receive output regarding the origin repository, which is the default name given by Git for the cloned directory.
 
 From the directory of the repository in our terminal window, let’s use the `git remote` command along with the `-v` flag to display the URLs that Git has stored along with the relevant remote shortnames (as in “origin”):
 
@@ -297,7 +297,7 @@ From the directory of the repository in our terminal window, let’s use the `gi
 git remote -v
 ```
 
-Since we cloned a repository, our output should look similar to this:
+Since we cloned a repository, our output should be similar to this:
 
 ```
 [secondary_label Output]
@@ -341,7 +341,7 @@ Now you can refer to `upstream` on the command line instead of writing the entir
 
 Once we have configured a remote that references the upstream and original repository on GitHub, we are ready to sync our fork of the repository to keep it up-to-date.
 
-To sync our fork, from the directory of our local repository in a terminal window, we’ll use the `git fetch` command to fetch the branches along with their respective commits from the upstream repository. Since we used the shortname “upstream” to refer to the upstream repository, we’ll pass that to the command:
+To sync our fork, from the directory of our local repository in a terminal window, we’ll use the `git fetch` command to fetch the branches along with their respective commits from the upstream repository. Since we used the shortname “upstream” to refer to the upstream repository, we’ll pass that to the command.
 
 ```bash
 git fetch upstream
@@ -378,13 +378,13 @@ The output here will vary, but it will begin with `Updating` if changes have bee
 
 Your fork’s main branch is now in sync with the upstream repository, and any local changes you made were not lost.
 
-Depending on your own workflow and the amount of time you spend on making changes, you can sync your fork with the upstream code of the original repository as many times as it makes sense for you. But you should certainly sync your fork right before making a pull request to make sure you don’t contribute conflicting code.
+Depending on your own workflow and the amount of time you spend on making changes, you can sync your fork with the upstream code of the original repository as many times as it makes sense for you. But you should certainly sync your fork right before making a pull request to make sure you don’t contribute conflicting code automatically.
 
 ## Create Pull Request
 
 At this point, you are ready to make a pull request to the original repository.
 
-You should navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
+You should navigate to your forked repository, and press the **New pull request** button on your left-hand side of the page.
 
 ![GitHub Pull Request Button](https://assets.digitalocean.com/articles/eng_python/PullRequest/PRButton.png)
 
@@ -394,9 +394,9 @@ Once you have chosen, for example, the main branch of the original repository on
 
 ![GitHub Pull Request](https://assets.digitalocean.com/articles/eng_python/PullRequest/PullRequest.png)
 
-You should add a title and a comment to the appropriate fields and then press the “**Create pull request**” button.
+You should add a title and a comment to the appropriate fields and then press the **Create pull request** button.
 
-At this point, the maintainers of the original repository will decide whether or not to accept your pull request. They may ask for you to edit or revise your code prior to accepting the pull request.
+At this point, the maintainers of the original repository will decide whether or not to accept your pull request. They may ask for you to edit or revise your code prior to accepting the pull request through submitting a code review.
 
 ## Conclusion
 
@@ -405,5 +405,3 @@ At this point, you have successfully sent a pull request to an open-source softw
 Contributing to open-source projects — and becoming an active open-source developer — can be a rewarding experience. Making regular contributions to software you frequently use allows you to make sure that that software is as valuable to other end users as it can be.
 
 If you’re interested in learning more about Git and collaborating on open-source software, you can read our tutorial series entitled _[An Introduction to Open Source](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source)_. If you’re already familiar with Git, and would like a cheat sheet, you can refer to “[How To Use Git: A Reference Guide](https://www.digitalocean.com/community/tutorials/how-to-use-git-a-reference-guide).”
-
-_A version of this tutorial was published at [https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)_.
